@@ -8,28 +8,9 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class ChooseLocationState extends State<ChooseLocation> {
-  void getData() async {
-    /////simulate network request for a user name
-    String username = await Future.delayed(Duration(seconds: 3), () {
-      return 'yoni';
-    });
-    String bio = await Future.delayed(Duration(seconds: 2), () {
-      return 'vegan , musician & egg collector';
-    });
-
-    print('$username - $bio');
-  }
-
-  int counter = 0;
-
-  @override
-  void initState() {
-    print('init state function run1');
-    getData();
-  }
-
   @override
   Widget build(BuildContext context) {
+    // ignore: avoid_print
     print('build function run');
     return Scaffold(
       backgroundColor: Colors.grey[200],
@@ -39,13 +20,6 @@ class ChooseLocationState extends State<ChooseLocation> {
         centerTitle: true,
         elevation: 0,
       ),
-      body: ElevatedButton(
-          onPressed: () {
-            setState(() {
-              counter += 1;
-            });
-          },
-          child: Text('counter is $counter')),
     );
   }
 }
