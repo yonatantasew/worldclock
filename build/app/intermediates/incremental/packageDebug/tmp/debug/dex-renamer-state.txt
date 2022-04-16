@@ -1,0 +1,4 @@
+#Sat Apr 16 19:52:14 EAT 2022
+base.0=/home/yoni/Documents/Flutter/Testapp/worldclock/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
